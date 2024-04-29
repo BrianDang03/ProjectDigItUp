@@ -21,10 +21,10 @@ public class OreSpawner : MonoBehaviour
             float oreOffset;
             Vector3 spawnPosition = Player.GetPlayerPosition();
 
-            oreOffset = UnityEngine.Random.Range(1, 1);
+            oreOffset = UnityEngine.Random.Range(-1, 1);
             spawnPosition.x = Player.GetPlayerPosition().x -oreOffset;
 
-            oreOffset = UnityEngine.Random.Range(1, 1);
+            oreOffset = UnityEngine.Random.Range(-1, 1);
             spawnPosition.y = Player.GetPlayerPosition().y - oreOffset;
 
             yield return new WaitForSeconds(spawnTimer);
