@@ -14,11 +14,11 @@ public class PlayerMovement : MonoBehaviour
         Vector3 moveDir = new Vector3(0, 0, 0);
         if (Input.GetKey(KeyCode.W))
         {
-            moveDir.y += 1f;
+            moveDir.z += 1f;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            moveDir.y -= 1f;
+            moveDir.z -= 1f;
         }
         if (Input.GetKey(KeyCode.A))
         {
@@ -40,8 +40,8 @@ public class PlayerMovement : MonoBehaviour
             transform.position += movBack * movementSpeed * movementSpeed * Time.deltaTime;
         }
 
-        // Move the Player Back towards the middle from the y
-        if (Mathf.Abs(transform.position.y) < boundary)
+        // Move the Player Back towards the middle from the z
+        if (Mathf.Abs(transform.position.z) < boundary)
         {
             transform.position += moveDir * movementSpeed * Time.deltaTime;
         }

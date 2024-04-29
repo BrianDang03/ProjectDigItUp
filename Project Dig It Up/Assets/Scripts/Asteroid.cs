@@ -19,7 +19,7 @@ public class Asteroid : MonoBehaviour
         moveToPlayer.x += asteroidOffest;
 
         asteroidOffest = Random.Range(-0.5f, 0.5f);
-        moveToPlayer.y += asteroidOffest;
+        moveToPlayer.z += asteroidOffest;
 
         StartCoroutine(DestroyAsteroid());
     }

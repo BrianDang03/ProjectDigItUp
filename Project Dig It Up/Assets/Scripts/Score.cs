@@ -15,6 +15,6 @@ public class Score : MonoBehaviour
 
     private void CollisionHandler_OnOrePickUp(object sender, EventArgs e)
     {
-        scoreText.text = $"Score: {++score}";
+        scoreText.text = $"{++score}";
     }
 }
