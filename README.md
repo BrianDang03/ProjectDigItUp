@@ -1,6 +1,6 @@
 # Galactic Mayhem
 
-![image](https://github.com/BrianDang03/ProjectDigItUp/assets/124744302/9bd07f79-2998-4c9a-a3e8-8725784bef85)
+![image](https://github.com/BrianDang03/ProjectDigItUp/assets/124744302/061bce87-26f1-4cca-9144-9c6e5aa7e979)
 
 itch.io: https://mattarimon.itch.io/galactic-mayhem
 
