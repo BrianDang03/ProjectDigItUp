@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
-    [SerializeField] private float asteroidSpeed = 5f;
+    [SerializeField] private float asteroidSpeed = 2f;
     [SerializeField] private float destroyTimer = 3f;
 
     private Vector3 moveToPlayer;
@@ -13,7 +13,7 @@ public class Asteroid : MonoBehaviour
 
     private void OnEnable()
     {
-        moveToPlayer = 2 * (Player.GetPlayerPosition() - transform.position).normalized;
+        moveToPlayer = asteroidSpeed * (Player.GetPlayerPosition() - transform.position).normalized;
 
         asteroidOffest = Random.Range(-0.5f, 0.5f);
         moveToPlayer.x += asteroidOffest;
