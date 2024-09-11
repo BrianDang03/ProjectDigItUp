@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
-    [SerializeField] private float asteroidSpeed = 2f;
+    [SerializeField] private float asteroidSpeed = 10f;
     [SerializeField] private float destroyTimer = 3f;
 
     private Vector3 moveToPlayer;
@@ -26,7 +26,7 @@ public class Asteroid : MonoBehaviour
 
     private void Update()
     {
-        transform.position += moveToPlayer * asteroidSpeed * Time.deltaTime;
+        transform.position += moveToPlayer * Time.deltaTime;
     }
 
     private IEnumerator DestroyAsteroid()
